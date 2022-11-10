@@ -951,27 +951,3 @@
 **MDN Web Docs**（旧称Mozilla Developer Network、Mozilla Developer Center，简称MDN）是一个汇集众多Mozilla基金会产品和网络技术开发文档的**免费网站**。
 
 https://developer.mozilla.org/zh-CN/
-
- |      空格       |      &nbsp；      |
-|    <     |     小于号      |       & lt;       |
-|    >     |     大于号      |       & gt;       |
-|    &     |      和号       |      & amp;       |
-|    "     |      引号       |      & quot;      |
-|    ‘     |      撇号       | & apos;(IE不支持) |
-|    ￠    |    分(cent)     |     & cent；      |
-|    £     |    磅(pound)    |     & pound；     |
-|    ¥     |     元(yen)     |      & yen；      |
-|    €     |   欧元(euro)    |     & rueo；      |
-|    §     |      小节       |     & sect；      |
-|    ©     | 版权(copyright) |     & copy；      |
-|    ®     |    注册商标     |      & reg；      |
-|    ™     |      商标       |     & trade；     |
-|    ×     |      乘号       |     & times；     |
-|    ÷     |      除号       |    & divide；     |
-
-## 11、更多
-
-**MDN Web Docs**（旧称Mozilla Developer Network、Mozilla Developer Center，简称MDN）是一个汇集众多Mozilla基金会产品和网络技术开发文档的**免费网站**。
-
-https://developer.mozilla.org/zh-CN/
-
