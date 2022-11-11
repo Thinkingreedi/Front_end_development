@@ -1,0 +1,56 @@
+<!-- 两栏布局指的是左边一栏宽度固定，右边一栏宽度自适应 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>两栏布局</title>
+    <style>
+        /* 方式一：通过浮动 左边设置为200px,右边元素的margin-left设置为200px,宽度设置为auto */
+        .outer {
+            height: 100px;
+            background: red;
+        }
+
+        .left {
+            float: left;
+            width: 200px;
+            background: green;
+        }
+
+        .right {
+            margin-left: 200px;
+            width: auto;
+            background: blue;
+        }
+
+        /* 方式二：利用 flex 布局，将左边元素设置为固定宽度 200px，将右边的元素设置为 flex:1
+        .outer {
+            display: flex;  
+            height: 100px;
+            background: red;
+        }
+
+        .left {
+            width: 200px;
+            background: green;
+        }
+
+        .right {
+            flex: 1;   --grow shrink basis
+            background: blue;
+        } 
+        */
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="left">left
+        </div>
+        <div class="right">right
+        </div>
+    </div>
+</body>
+
+</html>

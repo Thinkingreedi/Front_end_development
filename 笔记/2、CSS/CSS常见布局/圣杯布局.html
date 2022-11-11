@@ -1,0 +1,77 @@
+<!-- 两边两栏宽度固定，中间栏宽度自适应。在HTML结构上中间栏在最前面保证了最先渲染中间提升性能 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圣杯布局</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            /* left-width * 2 + right-width */
+            min-width: 600px;
+        }
+
+        header,
+        footer {
+            width: 100%;
+            background-color: grey;
+        }
+
+        .bd {
+            overflow: hidden;
+            /* 腾开位置 */
+            padding: 0 200px 0 200px;
+        }
+
+        .main {
+            float: left;
+            /* 自适应 */
+            width: 100%;
+            height: 200px;
+            background-color: ghostwhite;
+        }
+
+        .left {
+            float: left;
+            /* opacity: 0.5; */
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 产生布局效果的属性 -- 整整一行的宽度才能补偿这个margin的值 */
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+
+        .right {
+            float: left;
+            /* opacity: 0.5; */
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* 产生布局效果的属性 -- 负的right的宽 */
+            margin-left: -200px;
+            position: relative;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <div class="bd">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>
